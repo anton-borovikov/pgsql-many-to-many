@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="db_test@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.7">
+    <root id="1"/>
+    <database id="2" parent="1" name="db_test">
+      <ObjectId>37570</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12373</ObjectId>
+    </database>
+    <database id="4" parent="1" name="db_spring">
+      <ObjectId>16463</ObjectId>
+    </database>
+    <database id="5" parent="1" name="sweater">
+      <ObjectId>16772</ObjectId>
+    </database>
+    <database id="6" parent="1" name="demospring">
+      <ObjectId>25120</ObjectId>
+    </database>
+    <database id="7" parent="1" name="bank">
+      <ObjectId>26179</ObjectId>
+    </database>
+    <database id="8" parent="1" name="bank2">
+      <ObjectId>26180</ObjectId>
+    </database>
+    <database id="9" parent="1" name="ibanking">
+      <ObjectId>37212</ObjectId>
+    </database>
+    <database id="10" parent="1" name="ibankingtest">
+      <ObjectId>37382</ObjectId>
+    </database>
+    <database id="11" parent="1" name="restapp">
+      <ObjectId>37561</ObjectId>
+    </database>
+    <role id="12" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="13" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-11-22.17:31:24.335</IntrospectionTimestamp>
+      <IntrospectionStateNumber>6444</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="14" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="pg_temp_1">
+      <ObjectId>11816</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11817</ObjectId>
+    </schema>
+    <schema id="18" parent="2" name="information_schema">
+      <ObjectId>12081</ObjectId>
+    </schema>
+    <sequence id="19" parent="13" name="book_id_seq">
+      <ObjectId>37577</ObjectId>
+      <StateNumber>6441</StateNumber>
+      <SequenceIdentity>1..100000</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <table id="20" parent="13" name="book">
+      <ObjectId>37571</ObjectId>
+      <StateNumber>6444</StateNumber>
+    </table>
+    <column id="21" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>6443</StateNumber>
+      <DefaultExpression>nextval(&apos;book_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="22" parent="20" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>6444</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+  </database-model>
+</dataSource>
